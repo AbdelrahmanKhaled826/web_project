@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spicy</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="master.css">
+    <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+    <style media="screen">
+        @media only screen and (max-width: 768px) {
+          .nav-menu {
+              position: fixed;
+              left: -100%;
+              top: 5rem;
+              flex-direction: column;
+              background-color:rgb(15 ,11 ,55);
+              width: 71%;
+              border-radius: 10px;
+              text-align: center;
+              transition: 0.3s;
+              box-shadow:
+                  0 10px 27px rgba(0, 0, 0, 0.05);
+                  opacity: .8;
+          }
+          .nav-menu.active {
+              left: 0;
+          }
+          .nav-item {
+              margin: 2.5rem 0;
+          }
+        
+          .hamburger {
+              display: block;
+              cursor: pointer;
+              margin-left:-120px;
+          }
+          .hamburger.active .bar:nth-child(2) {
+                  opacity: 0;
+              }
+        
+              .hamburger.active .bar:nth-child(1) {
+                  transform: translateY(8px) rotate(45deg);
+              }
+        
+              .hamburger.active .bar:nth-child(3) {
+                  transform: translateY(-8px) rotate(-45deg);
+              }
+    
+}
+@media only screen and (max-width: 1000px){
+
+.footer-section{
+    height: 100%;
+    margin-top: 33px;
+}
+.footer-iteam,.footer-it,.footer-2,.footer-3{
+
+width:40%;
+height: 100%;
+float: left;
+margin-left: 2%;
+margin-right: 3%;
+margin-top: 9%;
+margin-bottom: 7%;
+}         
+.footer4{
+    margin: 0;
+}
+body{
+    font-size: 2vh;
+}
+.in,.word{
+    padding: 0;
+    margin: auto;
+}
+.form-section{
+    width: 100%;
+}
+}
+
+
+
+
+
+</style>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+
+                        <a href="index.html">    <i class="fas fa-3x fa-utensils"><i>Spicy</i></i>                        </a>
+                    
+
+                </div>
+            
+            </div>
+            <!----------------------------------------------------------nav-bar------------------------------->
+            <nav class="navbar">
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">HOME</a>
+                    </li>
+                
+                            
+        <li class="dropdown">
+            <a href=" menu.html" class="dropbtn">MENU</a>
+            <div class="dropdown-content">
+              <a href="./menu.html#k1">Breakfast</a>
+              <a href="./menu.html#k2">Lunch</a>
+              <a href="./menu.html#k3">Dinner</a>
+            </div>
+          </li>
+                    <li class="nav-item">
+                        <a href="team.html" class="nav-link">TEAM</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">SERVICES</a>
+                    </li>
+                    
+                    
+                                          
+        
+          <li class="dropdown">
+            <a href="form.html" class="dropbtn">FORM</a>
+            <div class="dropdown-content">
+              <a href="./form.html#p1">Registration</a>
+              <a href="./form.html#p3">Contact Us</a>
+              <a href="./form.html#p2">Book table</a>
+            </div>
+          </li>
+                      
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+<!-----------------------------------------------------------------------end-nav-bar---------------------------->
+
+    </div>
+</header>
+
+<!-- ---------------------------------------------------------header end--------------------------------->
+
+<!------------------------------------------------------- home section start----------------------------------->
+<section class="for-section" id="home">
+    <div class="home-img"></div>
+    <div class="container">
+        <div class="row2">
+            <div class="home-text">
+            <h1 class="hhh"><i>SPICY</i></h1>
+<h3 class="hh3">Discover Restaurants
+                    That deliver near You</h3>
+                <a href="menu.html" class="btn">our menu</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-----------------------------------------------------------form------------------------------------------------->
+   <section class="contain">
+       <div class="form-section" id="p1">
+        <h1>   <caption class="caption-table">Registration form</caption>
+</h1>
+
+
+  
+    <form action="index.html" method="GET"  class="for"  id="formsection" onsubmit="validateForm()" >
+           <table>
+<tr>
+    <td>
+        <label for="fname" class="word"><i class="fa fa-user"></i> first Name</label>
+
+    </td>
+    <td>
+        <input type="text" id="fname" class="in" placeholder="Enter your first name" >
+        <span id = "blankMsg" style="color:red;font-size: x-small;"> </span> <br><br>  
+
+    </td>
+    </tr>
+
+    
+        <tr>
+            <td>
+                <label for="lname" class="word"><i class="fa fa-user"></i> last Name</label>
+        
+            </td>
+            <td>
+                <input type="text" id="lname" class="in" placeholder="Enter your last name" >
+                <span id = "charMsg" style="color:red;font-size: x-small;"> </span> <br><br>  
+
+            </td>
+            </tr>
+
+            
+                <tr>
+                    <td>
+                        <label for="email" id="email" class="word"><i class="fa fa-envelope"></i> Email</label>
+
+                
+                    </td>
+                    <td>
+                        <input type="text" id="em" class="in" placeholder="john@example.com" >
+                        <span id = "message0" style="color:red; font-size: x-small;"> </span> <br><br>  
+
+                    </td>
+                    </tr>
+                    
+            
+                <tr>
+                    <td>
+                        
+                        <label for="adr" class="word"><i class="fa fa-address-card-o"></i> Address</label>
+                
+                    </td>
+                    <td>
+                        <input type="text" id="addrese"class="in" name="address" placeholder="542 W. 15th Street">
+                    </td>
+                    </tr>
+
+
+<tr>
+    <td>
+        <label for="city" class="word"><i class="fa fa-institution"></i> City</label>
+
+    </td>
+    <td>
+        <input type="text" id="city" class="in" name="city" placeholder="New York">
+
+    </td>
+</tr>
+
+<tr>
+    <td>            <label for="phoneNum" class="word">Phone Number</label>
+    </td>
+    <td>
+
+        <input type="text"id="telephone"class="in"  placeholder="01xxxxxxxx"/>
+        <span id = "message00" style="color:red; font-size: x-small;"> </span> <br><br>  
+
+    </td>
+    
+
+</tr>
+<tr>
+    <td><label for="password" class="word" id="pass">Password</label></td>
+    <td>            <input type="password"id="password"class="in"placeholder="Enter Password"  />
+        <span id = "message1" style="color:red; font-size: x-small;"> </span> <br><br>  
+
+    </td>
+</tr>
+<tr>
+    <td>            <label for="password2" class="word">Confirm Password</label>    </td>
+    <td>
+        <input type="password"id="password2"class="in" placeholder="Enter Password Again"/>
+        <span id = "message2" style="color:red;font-size: x-small; "> </span> <br><br>  
+
+    </td>
+</tr>
+<tr><td>
+    <label class="word" for="gender">Gender</label><br />
+
+</td>
+
+<td> <select name="gender" id="gender" class="select">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select> </td>
+</tr>
+<tr>
+    <td colspan="2">          <button type="submit" class="submition" id="submition">Submit</button>
+    </td>
+</tr>
+
+
+</table>
+</form>
+</div>
+</section>
+
+
+<!-----------------------------------------------------------bookfood us--------------------------------------------------------------->
+        <div class="contact">
+          <div class="co" id="p2">
+            <div class="picture">
+<img src="img/book.jpg" alt="bic">
+            </div>
+            <div class="book">
+
+                <div class="booking-form">
+                    <form id="booking-form">
+                        <h2>Booking place for your dinner!</h2>
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" value="" placeholder="Your name"/>
+                            
+                        </div>
+                        <div class="form-group form-input">
+                            <input type="number" name="phone" id="phone" value="" placeholder="your phone"/>
+                            
+                        </div>
+                        <div class="form-group">
+                            <div class="select-list">
+                                <select name="time" id="time" >
+                                    <option value="" class="a">Time</option>
+                                    <option value="6pm" class="a">6:00 PM</option>
+                                    <option value="7pm" class="a">7:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="select-list">
+                                <select name="food" id="food">
+                                    <option value="" class="a">Food</option>
+                                    <option value="seasonalfish" class="a">Seasonal steamed fish</option>
+                                    <option value="assortedmushrooms" class="a">Assorted mushrooms</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-radio">
+                            <label class="label-radio" styleht:="line-heig:40px;"> Select Your Dining Space</label>
+                            <div class="radio-item-list">
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="2" id="number_people_2" />
+                                    <label for="number_people_2">2</label>
+                                </span>
+                                <span class="radio-item active">
+                                    <input type="radio" name="number_people" value="4" id="number_people_4"  />
+                                    <label for="number_people_4">4</label>
+                                </span>
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="6" id="number_people_6" />
+                                    <label for="number_people_6">6</label>
+                                </span>
+                                <span class="radio-item">
+                                    <input type="radio"  />
+                                    <label for="number_people_8">8</label>
+                                </span>
+                                <span class="radio-item">
+                                    <input type="radio" name="number_people" value="10" id="number_people_10" />
+                                    <label for="number_people_10">10</label>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="form-submit">
+                            <button class="bt"  >Book Now!</button></br>
+                            <a href="index.html" class="vertify-booking " style="line-height: 40px;">Verify your booking info from your phone</a>
+                        </div>
+            </form>
+            </div>
+            </div>
+</div>
+</div>
+
+<div class="us" id="p3">
+    <div class="con">
+          <div style="text-align:center">
+            <h2>Contact Us</h2>
+            <p>Swing by for a cup of coffee, or leave us a message:</p>
+          </div>
+          <div class="rrr">
+            <div class="ccc">
+              <img src="img/cont.jpg" style="width:100%">
+            </div>
+          <div class="ccc">
+              <form action="/action_page.php">
+                <label for="fname" >First Name</label>
+                <input type="text" id="fname" name="firstname" class="ffnn" placeholder="Your name..">
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" class="ffnn" placeholder="Your last name..">
+                <label for="country">Country</label>
+                <select id="country" class="sll" name="country">
+                  <option value="australia">Egypt</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" class="ttxx" placeholder="Write something.." style="height:170px"></textarea>
+                <input type="submit" value="Submit" class="sss">
+              </form>
+            </div>
+          </div>
+        </div>
+        
+
+
+</div>
+                            <!---------------------------------------------------------------end contact us---------------->
+<!--------------------------------------------------------------------------------------------------section-footer-------------------------------------->
+<section class="footer1-section">
+    <div class="row">
+<!------------------------------------------------->
+<div class="footer-iteam">
+    <h3>Top Products</h3>
+   <p> <a href="index.html">Managed Websites</a></p>
+   <p> <a href="index.html">Manage Reputation</a></p>
+    <p><a href="index.html">Power Tools</a></p>
+    <p><a href="index.html">Marketing Service</a></p>
+</div>
+<!------------------------------------------------->
+<div class="footer-it">
+    <h3>Quick Links</h3>
+   <p> <a href="index.html">jobs</a></p>
+   <p> <a href="index.html">Brand Assts</a></p>
+    <p<><a href="index.html">Investor Relations</a></p>
+    <p><a href="index.html">Terms Of Service </a></p>
+</div>
+<!------------------------------------------------->
+<div class="footer-it">
+    <h3>Resources</h3>
+   <p> <a href="index.html">Guides</a></p>
+   <p> <a href="index.html">Research</a></p>
+    <p<><a href="index.html">Experts</a></p>
+    <p><a href="index.html">Agencies</a></p>
+</div>
+<!------------------------------------------------->
+<div class="footer-it">
+    <h3>Features </h3>
+   <p> <a href="index.html">jobs</a></p>
+   <p> <a href="index.html">Brand Assts</a></p>
+    <p<><a href="index.html">Investor Relations</a></p>
+    <p><a href="index.html">Terms Of Service </a></p>
+</div>
+<!------------------------------------------------->
+<div class="footer-2">
+   <h3>Open Hours</h3>
+   <p>Monday   9:00 - 24:00</p>
+<p>Tuesday 9:00 - 24:00</p>
+<p>Wednesday
+    9:00 - 24:00</p>
+    <p>Thursday
+        9:00 - 24:00</p>
+        <p>Friday
+            9:00 - 02:00</p>
+            <p>Saturday
+                9:00 - 02:00</p>
+                <p>Sunday
+                    9:00 - 02:00</p>
+</div>
+<!------------------------------------------------->
+<div class="footer-3">
+    <h3>Feliciano</h3>
+   <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+   <a href="#"><i class="fab fa-2x fa-facebook-f" style="background-color: black;border-radius:16px;color: white;"></i></a>
+<a href="#"><i class="fab fa-2x fa-instagram" style="background-color: black; border-radius: 17px;color: white;"></i></a>
+<a href="#"><i class="fab fa-2x fa-twitter" style="background-color: black; border-radius: 17px;color: white;"></i></a>
+<a href="#"><i class="fab fa-2x fa-whatsapp" style="background-color: black; border-radius: 17px;color: white;"></i></a>
+</div>
+<!-------------------------------------------------->
+<p class="footer4">Copyright ©2021 All rights reserved | This template is made with<i class="fas fa-heart"></i>  by Colorlib</p>
+</div>
+</section>
+
+<script type="text/javascript" src="script.js">
+
+</script>
+</body>
+</html>

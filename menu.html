@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="master.css">
+    <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+    <style media="screen">
+        @media only screen and (max-width: 768px) {
+          .nav-menu {
+              position: fixed;
+              left: -100%;
+              top: 5rem;
+              flex-direction: column;
+              background-color:rgb(15 ,11 ,55);
+opacity: .8;
+              width: 100%;
+              border-radius: 10px;
+              text-align: center;
+              transition: 0.3s;
+              box-shadow:
+                  0 10px 27px rgba(0, 0, 0, 0.05);
+          }
+        
+          .nav-menu.active {
+              left: 0;
+          }
+        
+          .nav-item {
+              margin: 2.5rem 0;
+          }
+        
+          .hamburger {
+              display: block;
+              cursor: pointer;
+              margin-left: -120px;
+          }
+          .hamburger.active .bar:nth-child(2) {
+                  opacity: 0;
+              }
+        
+              .hamburger.active .bar:nth-child(1) {
+                  transform: translateY(8px) rotate(45deg);
+              }
+        
+              .hamburger.active .bar:nth-child(3) {
+                  transform: translateY(-8px) rotate(-45deg);
+              }
+        }
+        
+
+        @media only screen and (max-width: 1000px){
+            .bvb{
+                margin-left:10%;
+                margin-bottom: 2200px;
+                margin-left: auto;
+                margin-right:auto ;
+            }
+
+.sec-menu .text1 a{
+    font-size: x-small;
+}
+.footer-iteam,.footer-it,.footer-2,.footer-3{
+
+width:40%;
+height: 100%;
+float: left;
+margin-left: 2%;
+margin-right: 3%;
+margin-top: 4%;
+margin-bottom: 10%;
+}         
+.footer4{
+margin: 0;;
+    font-size:20px;
+
+}
+.breakfast .p{
+    margin: 0;
+    font-size:30px;
+    width: 10%;
+    color: black;
+border: 0 white;
+background-color: #f1f9ff;
+text-align: center;
+z-index: -1;
+    
+}
+.footer-section{
+    height: 1200px;
+}
+
+}
+
+
+        </style>
+        
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+
+                        <a href="index.html">    <i class="fas fa-3x fa-utensils"><i>Spicy</i></i>                        </a>
+                    
+
+                </div>
+            
+            </div>
+            <!----------------------------------------------------------nav-bar------------------------------->
+            <nav class="navbar">
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">HOME</a>
+                    </li>
+                    
+        <li class="dropdown">
+            <a href=" menu.html" class="dropbtn">MENU</a>
+            <div class="dropdown-content">
+              <a href="./menu.html#k1">Breakfast</a>
+              <a href="./menu.html#k2">Lunch</a>
+              <a href="./menu.html#k3">Dinner</a>
+            </div>
+          </li>
+                    <li class="nav-item">
+                        <a href="team.html" class="nav-link">TEAM</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">SERVICES</a>
+                    </li>
+          <li class="dropdown">
+            <a href="form.html" class="dropbtn">FORM</a>
+            <div class="dropdown-content">
+              <a href="./form.html#p1">Registration</a>
+              <a href="./form.html#p3">Contact Us</a>
+              <a href="./form.html#p2">Book table</a>
+            </div>
+          </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+<!----------------------------------------------------end----------------->
+</div>
+</header>
+<!-- home section start-->
+<section class="hom1-section" id="home">
+    <div class="home-img"></div>
+    <div class="container">
+        <div class="row2">
+            <div class="home-text">
+                <h1><i>Menu</i></h1>
+                <h3>Discover Restaurants
+                    That deliver near You</h3>
+                <a href="menu.html" class="btn">our menu</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-------------------------------------------end home-------------------------------->
+<!---------------------------------------------menu start-------------->
+<section class="sec-menu">
+    <section class="breakfast" id="k1">
+        <p class="p">Breakfast</p>
+
+
+    <div class="bvb">
+    
+        <div class="card">
+            <img src="img/br6.jpg" alt="Denim Jeans" style="width:100%">
+            <h1>SUMMER COOKING</h1>
+            <p class="price">$20</p>
+            <p>Appetizer</p>
+            <p><button>Order Now</button></p>
+          </div>
+          <div class="card">
+        <img src="img/br2.jpg" alt="Denim Jeans" style="width:100%">
+        <h1>Grilled Beef</h1>
+        <p class="price">$14.99</p>
+        <p>Meat, Potatoes, Rice, Tomatoe</p>
+        <p><button>Order Naw</button></p>
+      </div>
+    
+      <div class="card">
+        <img src="img/br 5.jpeg" alt="Denim Jeans" style="width:100%">
+        <h1>SUMMER COOKING</h1>
+        <p class="price">$20</p>
+        <p>Appetizer</p>
+        <p><button>Order Now</button></p>
+      </div>
+      <div class="card">
+    <img src="img/br 4.jpg" alt="Denim Jeans" style="width:100%">
+    <h1>Grilled Beef</h1>
+    <p class="price">$14.99</p>
+    <p>Meat, Potatoes, Rice, Tomatoe</p>
+    <p><button>Order Naw</button></p>
+    </div>
+    
+    <div class="card">
+        <img src="img/br 3.jpg" alt="Denim Jeans" style="width:100%">
+        <h1>SUMMER COOKING</h1>
+        <p class="price">$20</p>
+        <p>Appetizer</p>
+        <p><button>Order Naw</button></p>
+      </div>
+      <div class="card">
+    <img src="img/br1.jpg" alt="Denim Jeans" style="width:100%">
+    <h1>Grilled Beef</h1>
+    <p class="price">$14.99</p>
+    <p>Meat, Potatoes, Rice, Tomatoe</p>
+    <p><button>Order Naw</button></p>
+    </div>
+    
+    </div>
+
+</section>
+    <!---------------------------------------------->
+    <section class="breakfast" id="k2">
+        <p class="p" id="p">Lunch</p>
+
+
+<div class="bvb">
+    
+    <div class="card">
+        <img src="img/d1.png" alt="Denim Jeans" style="width:100%">
+        <h1>SUMMER COOKING</h1>
+        <p class="price">$20</p>
+        <p>Appetizer</p>
+        <p><button>Order Now</button></p>
+      </div>
+      <div class="card">
+    <img src="img/d6.jpg" alt="Denim Jeans" style="width:100%">
+    <h1>Grilled Beef</h1>
+    <p class="price">$14.99</p>
+    <p>Meat, Potatoes, Rice, Tomatoe</p>
+    <p><button>Order Naw</button></p>
+  </div>
+
+  <div class="card">
+    <img src="img/cover2.jpg" alt="Denim Jeans" style="width:100%">
+    <h1>SUMMER COOKING</h1>
+    <p class="price">$20</p>
+    <p>Appetizer</p>
+    <p><button>Order Now</button></p>
+  </div>
+  <div class="card">
+<img src="img/d3.jpeg" alt="Denim Jeans" style="width:100%">
+<h1>Grilled Beef</h1>
+<p class="price">$14.99</p>
+<p>Meat, Potatoes, Rice, Tomatoe</p>
+<p><button>Order Naw</button></p>
+</div>
+
+<div class="card">
+    <img src="img/d4.jpg" alt="Denim Jeans" style="width:100%">
+    <h1>SUMMER COOKING</h1>
+    <p class="price">$20</p>
+    <p>Appetizer</p>
+    <p><button>Order Naw</button></p>
+  </div>
+  <div class="card">
+<img src="img/d5.jfif" alt="Denim Jeans" style="width:100%">
+<h1>Grilled Beef</h1>
+<p class="price">$14.99</p>
+<p>Meat, Potatoes, Rice, Tomatoe</p>
+<p><button>Order Naw</button></p>
+</div></div>
+</section>
+<!--end menu----------------------------------------------------->
+<section class="breakfast" id="k3">
+    <p class="p">Dinner</p>
+
+
+
+<div class="bvb">
+
+    <div class="card">
+        <img src="img/gal1.jpg" alt="Denim Jeans" style="width:100%">
+        <h1>SUMMER COOKING</h1>
+        <p class="price">$20</p>
+        <p>Appetizer</p>
+        <p><button>Order Now</button></p>
+      </div>
+      <div class="card">
+    <img src="img/gal2.jpg" alt="Denim Jeans" style="width:100%">
+    <h1>Grilled Beef</h1>
+    <p class="price">$14.99</p>
+    <p>Meat, Potatoes, Rice, Tomatoe</p>
+    <p><button>Order Naw</button></p>
+  </div>
+
+  <div class="card">
+    <img src="img/gal6.jpg" alt="Denim Jeans" style="width:100%">
+    <h1>SUMMER COOKING</h1>
+    <p class="price">$20</p>
+    <p>Appetizer</p>
+    <p><button>Order Now</button></p>
+  </div>
+  <div class="card">
+<img src="img/gal5.jpg" alt="Denim Jeans" style="width:100%">
+<h1>Grilled Beef</h1>
+<p class="price">$14.99</p>
+<p>Meat, Potatoes, Rice, Tomatoe</p>
+<p><button>Order Naw</button></p>
+</div>
+
+<div class="card">
+    <img src="img/gal4.jpg" alt="Denim Jeans" style="width:100%">
+    <h1>SUMMER COOKING</h1>
+    <p class="price">$20</p>
+    <p>Appetizer</p>
+    <p><button>Order Naw</button></p>
+  </div>
+  <div class="card">
+<img src="img/gal3.jpg" alt="Denim Jeans" style="width:100%">
+<h1>Grilled Beef</h1>
+<p class="price">$14.99</p>
+<p>Meat, Potatoes, Rice, Tomatoe</p>
+<p><button>Order Naw</button></p>
+</div>
+</div>
+</section>
+</section>
+<!----------------------------------------------------footer-------------------------------->
+<!--------------------------------------------------------------------------------------------------section-footer-------------------------------------->
+<section class="footer-section" style="position: absolute;margin-top: 1024px;">
+    <div class="row">
+<!------------------------------------------------->
+<div class="footer-iteam">
+    <h3>Top Products</h3>
+   <p> <a href="index.html">Managed Websites</a></p>
+   <p> <a href="index.html">Manage Reputation</a></p>
+    <p><a href="index.html">Power Tools</a></p>
+    <p><a href="index.html">Marketing Service</a></p>
+
+</div>
+<!-------------------------------------------------->
+<!------------------------------------------------->
+<div class="footer-it">
+    <h3>Quick Links</h3>
+   <p> <a href="index.html">jobs</a></p>
+   <p> <a href="index.html">Brand Assts</a></p>
+    <p<><a href="index.html">Investor Relations</a></p>
+    <p><a href="index.html">Terms Of Service </a></p>
+
+</div>
+<!-------------------------------------------------->
+<!------------------------------------------------->
+<div class="footer-it">
+    <h3>Resources</h3>
+   <p> <a href="index.html">Guides</a></p>
+   <p> <a href="index.html">Research</a></p>
+    <p<><a href="index.html">Experts</a></p>
+    <p><a href="index.html">Agencies</a></p>
+
+</div>
+<!-------------------------------------------------->
+<!------------------------------------------------->
+<div class="footer-it">
+    <h3>Features </h3>
+   <p> <a href="index.html">jobs</a></p>
+   <p> <a href="index.html">Brand Assts</a></p>
+    <p<><a href="index.html">Investor Relations</a></p>
+    <p><a href="index.html">Terms Of Service </a></p>
+
+</div>
+<!-------------------------------------------------->
+<!------------------------------------------------->
+<div class="footer-2">
+   <h3>Open Hours</h3>
+   <p>Monday   9:00 - 24:00</p>
+<p>Tuesday 9:00 - 24:00</p>
+<p>Wednesday
+    9:00 - 24:00</p>
+    <p>Thursday
+        9:00 - 24:00</p>
+        <p>Friday
+            9:00 - 02:00</p>
+            <p>Saturday
+                9:00 - 02:00</p>
+                <p>Sunday
+                    9:00 - 02:00</p>
+</div>
+<!-------------------------------------------------->
+<!------------------------------------------------->
+<div class="footer-3">
+    <h3>Feliciano</h3>
+   <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+   <a href="#"><i class="fab fa-2x fa-facebook-f" style="background-color: black;border-radius:16px;color: white;"></i></a>
+<a href="#"><i class="fab fa-2x fa-instagram" style="background-color: black; border-radius: 17px;color: white;"></i></a>
+<a href="#"><i class="fab fa-2x fa-twitter" style="background-color: black; border-radius: 17px;color: white;"></i></a>
+<a href="#"><i class="fab fa-2x fa-whatsapp" style="background-color: black; border-radius: 17px;color: white;"></i></a>
+
+</div>
+<!-------------------------------------------------->
+<p class="footer4">Copyright ©2021 All rights reserved | This template is made with<i class="fas fa-heart"></i>  by Colorlib</p>
+</div>
+
+</section>
+<!--foter----------------------------------------------------------------------------------->
+<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$4-->
+<script type="text/javascript" src="script.js">
+
+</script>
+</body>
+</html>

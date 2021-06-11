@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spicy</title>
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="master.css">
+    <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+    <style media="screen">
+        @media only screen and (max-width: 768px) {
+          .nav-menu {
+              position: fixed;
+              left: -100%;
+              top: 5rem;
+              flex-direction: column;
+              background-color:rgb(15 ,11 ,55);
+opacity: 0.8;
+              width: 100%;
+              border-radius: 10px;
+              text-align: center;
+              transition: 0.3s;
+              box-shadow:
+                  0 10px 27px rgba(0, 0, 0, 0.05);
+          }
+        
+          .nav-menu.active {
+              left: 0;
+          }
+        
+          .nav-item {
+              margin: 2.5rem 0;
+          }
+        
+          .hamburger {
+              display: block;
+              cursor: pointer;
+              margin-left: -120px;
+
+          }
+          .hamburger.active .bar:nth-child(2) {
+                  opacity: 0;
+              }
+        
+              .hamburger.active .bar:nth-child(1) {
+                  transform: translateY(8px) rotate(45deg);
+              }
+        
+              .hamburger.active .bar:nth-child(3) {
+                  transform: translateY(-8px) rotate(-45deg);
+              }
+        }
+        
+
+        @media only screen and (max-width: 1000px){
+            .footer-section{
+    height: 100%;
+    
+}
+.stars{
+    margin-top:600px;
+}
+.footer-iteam,.footer-it,.footer-2,.footer-3{
+
+width:40%;
+height: 100%;
+float: left;
+margin-left: 2%;
+margin-right: 3%;
+margin-top: 4%;
+margin-bottom: 10%;
+}         
+.footer4{
+    margin: 0;
+    margin-top: 30px;
+}
+.team-sec{
+    
+    height: 2500px;
+    
+}
+          
+          
+.team-sec .pic-team{
+    height: 60%;
+    width: 75%;}
+    
+
+.fed{
+margin-bottom: 70px;
+margin-top: 120px;
+}
+
+.fed-team img{
+    width: 75%;
+    height: 60%;
+    margin-bottom: 40px;
+}
+
+}
+
+
+        </style>
+        
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+
+                        <a href="index.html">    <i class="fas fa-3x fa-utensils"><i>Spicy</i></i>                        </a>
+                    
+
+                </div>
+            
+            </div>
+            <!----------------------------------------------------------nav-bar------------------------------->
+            <nav class="navbar">
+                
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">HOME</a>
+                    </li>
+                            
+        <li class="dropdown">
+            <a href=" menu.html" class="dropbtn">MENU</a>
+            <div class="dropdown-content">
+              <a href="./menu.html#k1">Breakfast</a>
+              <a href="./menu.html#k2">Lunch</a>
+              <a href="./menu.html#k3">Dinner</a>
+            </div>
+          </li>
+                    <li class="nav-item">
+                        <a href="team.html" class="nav-link">TEAM</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link">SERVICES</a>
+                    </li>
+                    
+        
+          <li class="dropdown">
+            <a href="form.html" class="dropbtn">FORM</a>
+            <div class="dropdown-content">
+              <a href="./form.html#p1">Registration</a>
+              <a href="./form.html#p3">Contact Us</a>
+              <a href="./form.html#p2">Book table</a>
+            </div>
+          </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+<!----------------------------------------------------end----------------->
+</div>
+</header>
+<!-- home section start-->
+<section class="team-section" id="home">
+    <div class="home-img"></div>
+    <div class="container">
+        <div class="row2">
+            <div class="home-text">
+                <h1><i>Our Chef</i></h1>
+                <h3>Discover Restaurants
+                    That deliver near You</h3>
+                <a href="menu.html" class="btn">our menu</a>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="team-sec">
+    <div class="container">
+        <div class="row">
+            <div class="sec-title">
+<h2>Our Master Chef</h2>
+            </div>
+        </div>
+        <div class=row2>
+       <div class="pic-team">
+               <img src="img/t1.jpg" alt="Cinque Terre" width="600" height="400">
+            </a>
+            <div class="desc"><h3>John Smooth</h3>
+                <p>Restaurant Owner </p>
+            </div>
+          </div>
+          
+          <div class="pic-team">
+            <img src="img/t2.jpg" alt="Cinque Terre" width="600" height="400">
+         </a>
+         <div class="desc"><h3>Kharl Branyt </h3>
+             <p>Head Chef </p>
+         </div>
+       </div>
+
+       <div class="pic-team">
+        <img src="img/t3.jfif" alt="Cinque Terre" width="600" height="400">
+     </a>
+     <div class="desc"><h3>Luke Simo</h3>
+         <p>Chef</p>
+     </div>
+   </div>
+
+        
+</div>
+ </div>
+
+<div class="fed-team">
+    <div class="fed">Feedbacks</div>
+
+    <img src="img/fd1.png" alt="Cinque Terre" width="600" height="400">
+ </a>
+ 
+</div>
+
+
+<div class="fed-team">
+    
+
+    <img src="img/fd2.png" alt="Cinque Terre" width="600" height="400">
+ </a>
+ 
+</div>
+
+
+<div class="fed-team">
+
+    <img src="img/fd3.png" alt="Cinque Terre" width="600" height="400">
+ </a>
+ 
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<section class="stars">
+    <span class="heading">User Rating</span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star checked"></span>
+    <span class="fa fa-star"></span>
+    <p>4.1 average based on 254 reviews.</p>
+    <hr style="border:3px solid #f1f1f1">
+    
+    <div class="row">
+      <div class="side">
+        <div>5 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-5"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>150</div>
+      </div>
+      <div class="side">
+        <div>4 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-4"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>63</div>
+      </div>
+      <div class="side">
+        <div>3 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-3"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>15</div>
+      </div>
+      <div class="side">
+        <div>2 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-2"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>6</div>
+      </div>
+      <div class="side">
+        <div>1 star</div>
+      </div>
+      <div class="middle">
+        <div class="bar-container">
+          <div class="bar-1"></div>
+        </div>
+      </div>
+      <div class="side right">
+        <div>20</div>
+      </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--------------------------------------------------------------------------------------------------section-footer-------------------------------------->
+<section class="footer-section">
+    <div class="row">
+<!------------------------------------------------->
+<div class="footer-iteam">
+    <h3>Top Products</h3>
+   <p> <a href="index.html">Managed Websites</a></p>
+   <p> <a href="index.html">Manage Reputation</a></p>
+    <p><a href="index.html">Power Tools</a></p>
+    <p><a href="index.html">Marketing Service</a></p>
+
+</div>
+<!-------------------------------------------------->
+<!------------------------------------------------->
+<div class="footer-it">
+    <h3>Quick Links</h3>
+   <p> <a href="index.html">jobs</a></p>
+   <p> <a href="index.html">Brand Assts</a></p>
+    <p<><a href="index.html">Investor Relations</a></p>
+    <p><a href="index.html">Terms Of Service </a></p>
+
+</div>
+<!-------------------------------------------------->
+<!------------------------------------------------->
+<div class="footer-it">
+    <h3>Resources</h3>
+   <p> <a href="index.html">Guides</a></p>
+   <p> <a href="index.html">Research</a></p>
+    <p<><a href="index.html">Experts</a></p>
+    <p><a href="index.html">Agencies</a></p>
+
+</div>
+<!-------------------------------------------------->
+<!------------------------------------------------->
+<div class="footer-it">
+    <h3>Features </h3>
+   <p> <a href="index.html">jobs</a></p>
+   <p> <a href="index.html">Brand Assts</a></p>
+    <p<><a href="index.html">Investor Relations</a></p>
+    <p><a href="index.html">Terms Of Service </a></p>
+
+</div>
+<!-------------------------------------------------->
+<!------------------------------------------------->
+<div class="footer-2">
+   <h3>Open Hours</h3>
+   <p>Monday   9:00 - 24:00</p>
+<p>Tuesday 9:00 - 24:00</p>
+<p>Wednesday
+    9:00 - 24:00</p>
+    <p>Thursday
+        9:00 - 24:00</p>
+        <p>Friday
+            9:00 - 02:00</p>
+            <p>Saturday
+                9:00 - 02:00</p>
+                <p>Sunday
+                    9:00 - 02:00</p>
+</div>
+<!-------------------------------------------------->
+<!------------------------------------------------->
+<div class="footer-3">
+    <h3>Feliciano</h3>
+   <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+   <a href="#"><i class="fab fa-2x fa-facebook-f" style="background-color: black;border-radius:16px;color: white;"></i></a>
+<a href="#"><i class="fab fa-2x fa-instagram" style="background-color: black; border-radius: 17px;color: white;"></i></a>
+<a href="#"><i class="fab fa-2x fa-twitter" style="background-color: black; border-radius: 17px;color: white;"></i></a>
+<a href="#"><i class="fab fa-2x fa-whatsapp" style="background-color: black; border-radius: 17px;color: white;"></i></a>
+
+</div>
+<!-------------------------------------------------->
+<p class="footer4">Copyright ©2021 All rights reserved | This template is made with<i class="fas fa-heart"></i>  by Colorlib</p>
+</div>
+
+</section>
+
+
+
+<script type="text/javascript" src="script.js">
+</script>
+</body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="master.css">
+    <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+    <style media="screen">
+        @media only screen and (max-width: 768px) {
+          .nav-menu {
+              position: fixed;
+              left: -100%;
+              top: 5rem;
+              flex-direction: column;
+              background-color:rgb(15 ,11 ,55);
+              width: 100%;
+              border-radius: 10px;
+              text-align: center;
+              transition: 0.3s;
+              box-shadow:
+                  0 10px 27px rgba(0, 0, 0, 0.05);
+                  opacity: .8;
+          }
+          .nav-menu.active {
+              left: 0;
+          }
+          .nav-item {
+              margin: 2.5rem 0;
+          }
+        
+          .hamburger {
+              display: block;
+              cursor: pointer;
+              margin-left:-120px;
+          }
+          .hamburger.active .bar:nth-child(2) {
+                  opacity: 0;
+              }
+        
+              .hamburger.active .bar:nth-child(1) {
+                  transform: translateY(8px) rotate(45deg);
+              }
+        
+              .hamburger.active .bar:nth-child(3) {
+                  transform: translateY(-8px) rotate(-45deg);
+              }
+    
+}
+
+@media only screen and (max-width: 1193px){
+.about-section{
+    height:1500px;
+
+    
+}
+.about-section p{
+    margin: 0;
+    line-height: 30px;
+    margin-right: -90%;
+}
+
+.about-section img{
+    width: 100%;
+}
+
+} 
+    
+         @media only screen and (max-width: 1193px){
+.section-three .container p{
+    line-height: 25px;
+    padding: 3px;
+}
+.section-three .container .gal1{
+    margin:3px;
+    margin-left:2%;
+    margin-right:2%;
+    width: 45%;
+float: left;
+margin-bottom: 100px;
+}
+.section-three{
+    height:2099px;
+
+}
+.footer-section{
+    height: 100%;
+    margin-top: 120px;
+    width: 100%;
+    margin-right: 9%;
+}
+.footer-iteam,.footer-it,.footer-2,.footer-3{
+
+width:40%;
+height: 100%;
+float: left;
+margin-left: 2%;
+margin-right: 3%;
+margin-top: 9%;
+margin-bottom: 10%;
+}         
+.footer4{
+    margin: 0;
+    margin-top: 40px;
+}
+
+
+
+
+}
+/**/
+        
+        </style>
+        
+    <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+
+                        <a href="index.html">    <i class="fas fa-3x fa-utensils"><i>Spicy</i></i>                        </a>
+ </div>
+</div>
+<!----------------------------------------------------------nav-bar------------------------------->
+<nav class="navbar">
+                
+    <ul class="nav-menu">
+        <li class="nav-item">
+            <a href="index.html" class="nav-link">HOME</a>
+        </li>
+    
+        <li class="dropdown">
+            <a href=" menu.html" class="dropbtn">MENU</a>
+            <div class="dropdown-content">
+              <a href="./menu.html#k1">Breakfast</a>
+              <a href="./menu.html#k2">Lunch</a>
+              <a href="./menu.html#k3">Dinner</a>
+            </div>
+          </li>
+
+        <li class="nav-item">
+            <a href="team.html" class="nav-link">TEAM</a>
+        </li>
+        
+        <li class="nav-item">
+            <a href="services.html" class="nav-link">SERVICES</a>
+        </li>
+        
+        
+          <li class="dropdown">
+            <a href="form.html" class="dropbtn">FORM</a>
+            <div class="dropdown-content">
+              <a href="./form.html#p1">Registration</a>
+              <a href="./form.html#p3">Contact Us</a>
+              <a href="./form.html#p2">Book table</a>
+            </div>
+          </li>
+          
+    </ul>
+    <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
+</nav>
+<!-----------------------------------------------------------------------end-nav-bar---------------------------->
+
+
+
+        </div>
+        
+ 
+</header>
+
+<!-- header end-->
+
+<!-- home section start-->
+<section class="home-section" id="home">
+    <div class="home-img"></div>
+    <div class="container">
+        <div class="row2">
+            <div class="home-text">
+                <!--<h1><i>SPICY RESTURANT</i></h1>-->
+                
+
+
+
+
+<h1 class="hhh"><i>SPICY</i></h1>
+
+                <h3 class="hh3">Discover Restaurants
+                    That deliver near You</h3>
+                    <!--------------------------->
+                   
+                     <!---------------------------->
+                <a href="menu.html" class="btn">our menu</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--                  section about                    --->
+    <section class="about-section">
+    <div class="container">
+        <div class="row">
+            <div class="tit">
+                <h2>About Us</h2>
+
+            </div>
+
+        </div>
+        <div class="row">
+        <div class="about-text">
+<h3>welcom to spicy</h3>
+<p>Not all pasta calls for tomato sauce. Here, we toss whole-wheat angel hair pasta, combined with lemon, garlic and dry white wine, with fresh shrimp, scallops and salmon. Tip: Buy scallops that are “dry packed,” not packed in liquid. “Day-boat scallops,” sold the same day they’re caught, are worth searching for</p>
+  
+     <a href="menu" class="btn"> check our menu</a>
+            </div>
+            <div class="about-img">
+
+    <img src="img/cover9.jpg" alt="about-img">
+
+            </div>
+        </div>
+    </div>
+
+
+</section>
+<!------------------------------section-three---------------------->
+<section class="section-three">
+    <div class="container">
+        <h2>Popular Orders</h2>
+        <p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards</p>
+<p>         especially in the workplace. That’s why it’s crucial that, as women.</p>
+        <div class="row1">
+    <div class="gal1">
+<img src="img/gal3.jpg" alt="gal1">
+    
+    <div class="text1">
+<a href="menu">Weastern Set Meal 01</a>
+<p>Chicken Fried Rice | Crispy Chicken fry
+    Weastern Pickle | Mixed Vegetable
+    Soft Drinks</p>
+            </div>
+            
+    <div class="but">
+    <a href="menu">Order Now!</a>
+</div>         
+</div>
+<!-------------------------------------------------------------------->
+<div class="gal1">
+    <img src="img/gal2.jpg" alt="gal1">
+        
+        <div class="text1">
+    <a href="menu">Weastern Set Meal 02</a>
+    <p>Chicken Fried Rice | Crispy Chicken fry
+        Weastern Pickle | Mixed Vegetable
+        Soft Drinks</p>
+                </div>
+                
+        <div class="but">
+        <a href="menu">Order Now!</a>
+    </div>         
+    </div>
+<!--------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------->
+<div class="gal1">
+    <img src="img/cover55.jfif" alt="gal1">
+        
+        <div class="text1">
+    <a href="menu">Weastern Set Meal 03</a>
+    <p>Chicken Fried Rice | Crispy Chicken fry
+        Weastern Pickle | Mixed Vegetable
+        Soft Drinks</p>
+                </div>
+                
+        <div class="but">
+        <a href="menu">Order Now!</a>
+    </div>         
+    </div>
+<!-------------------------------------------------->
+<!-------------------------------------------------------------------->
+<div class="gal1">
+    <img src="img/gal6.jpg" alt="gal1">
+        
+        <div class="text1">
+    <a href="menu">Weastern Set Meal 04</a>
+    <p>Chicken Fried Rice | Crispy Chicken fry
+        Weastern Pickle | Mixed Vegetable
+        Soft Drinks</p>
+                </div>
+                
+        <div class="but">
+        <a href="menu">Order Now!</a>
+    </div>         
+    </div>
+<!-------------------------------------------------->
+<!-------------------------------------------------------------------->
+<div class="gal1">
+    <img src="img/gal66.jpg" alt="gal1">
+        
+        <div class="text1">
+    <a href="menu">Weastern Set Meal 05</a>
+    <p>Chicken Fried Rice | Crispy Chicken fry
+        Weastern Pickle | Mixed Vegetable
+        Soft Drinks</p>
+                </div>
+                
+        <div class="but">
+        <a href="menu">Order Now!</a>
+    </div>         
+    </div>
+<!-------------------------------------------------->
+<!-------------------------------------------------------------------->
+<div class="gal1">
+    <img src="img/gal5.jpg" alt="gal1">
+        
+        <div class="text1">
+    <a href="menu">Weastern Set Meal 06</a>
+    <p>Chicken Fried Rice | Crispy Chicken fry
+        Weastern Pickle | Mixed Vegetable
+        Soft Drinks</p>
+                </div>
+                
+        <div class="but">
+        <a href="menu">Order Now!</a>
+    </div>         
+    </div>
+<!-------------------------------------------------->
+</div> 
+   </div>
+   </section>
+<!--------------------------------------------------------------------------------------------------section-footer-------------------------------------->
+<section class="footer-section">
+    <div class="row">
+<!------------------------------------------------->
+<div class="footer-iteam">
+    <h3>Top Products</h3>
+   <p> <a href="index.html">Managed Websites</a></p>
+   <p> <a href="index.html">Manage Reputation</a></p>
+    <p><a href="index.html">Power Tools</a></p>
+    <p><a href="index.html">Marketing Service</a></p>
+
+</div>
+<!-------------------------------------------------->
+<!------------------------------------------------->
+<div class="footer-it">
+    <h3>Quick Links</h3>
+   <p> <a href="index.html">jobs</a></p>
+   <p> <a href="index.html">Brand Assts</a></p>
+    <p<><a href="index.html">Investor Relations</a></p>
+    <p><a href="index.html">Terms Of Service </a></p>
+
+</div>
+<!-------------------------------------------------->
+<!------------------------------------------------->
+<div class="footer-it">
+    <h3>Resources</h3>
+   <p> <a href="index.html">Guides</a></p>
+   <p> <a href="index.html">Research</a></p>
+    <p<><a href="index.html">Experts</a></p>
+    <p><a href="index.html">Agencies</a></p>
+
+</div>
+<!-------------------------------------------------->
+<!------------------------------------------------->
+<div class="footer-it">
+    <h3>Features </h3>
+   <p> <a href="index.html">jobs</a></p>
+   <p> <a href="index.html">Brand Assts</a></p>
+    <p<><a href="index.html">Investor Relations</a></p>
+    <p><a href="index.html">Terms Of Service </a></p>
+
+</div>
+<!-------------------------------------------------->
+<!------------------------------------------------->
+<div class="footer-2">
+   <h3>Open Hours</h3>
+   <p>Monday   9:00 - 24:00</p>
+<p>Tuesday 9:00 - 24:00</p>
+<p>Wednesday
+    9:00 - 24:00</p>
+    <p>Thursday
+        9:00 - 24:00</p>
+        <p>Friday
+            9:00 - 02:00</p>
+            <p>Saturday
+                9:00 - 02:00</p>
+                <p>Sunday
+                    9:00 - 02:00</p>
+</div>
+<!-------------------------------------------------->
+<!------------------------------------------------->
+<div class="footer-3">
+    <h3>Feliciano</h3>
+   <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+   <a href="#"><i class="fab fa-2x fa-facebook-f" style="background-color: black;border-radius:16px;color: white;"></i></a>
+<a href="#"><i class="fab fa-2x fa-instagram" style="background-color: black; border-radius: 17px;color: white;"></i></a>
+<a href="#"><i class="fab fa-2x fa-twitter" style="background-color: black; border-radius: 17px;color: white;"></i></a>
+<a href="#"><i class="fab fa-2x fa-whatsapp" style="background-color: black; border-radius: 17px;color: white;"></i></a>
+
+</div>
+<!-------------------------------------------------->
+<p class="footer4">Copyright ©2021 All rights reserved | This template is made with<i class="fas fa-heart"></i>  by Colorlib</p>
+</div>
+
+</section>
+<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$4-->
+<script type="text/javascript" src="script.js">
+
+</script>
+<!--$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$4-->
+</body>
+</html>
