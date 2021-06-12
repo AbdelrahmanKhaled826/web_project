@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="master.css">
     <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
     <style media="screen">
-        @media only screen and (max-width: 768px) {
+        @media only screen and (max-width: 1000px) {
           .nav-menu {
               position: fixed;
               left: -100%;
@@ -27,10 +27,10 @@
           .nav-menu.active {
               left: 0;
           }
-          .nav-item {
-              margin: 2.5rem 0;
-          }
-        
+          
+          .nav-item,.dropdown {
+              margin: .5rem 0;
+          }       
           .hamburger {
               display: block;
               cursor: pointer;
@@ -78,6 +78,17 @@ body{
 .form-section{
     width: 100%;
 }
+}
+@media only screen and (max-width: 340px){
+  table {
+width: 50px;
+
+  }
+  input[type="text"],input[type="password"]{
+      width: 50%;
+      margin: 0;
+      padding: 0;
+  }
 }
 
 
@@ -454,7 +465,6 @@ body{
 <a href="#"><i class="fab fa-2x fa-whatsapp" style="background-color: black; border-radius: 17px;color: white;"></i></a>
 </div>
 <!-------------------------------------------------->
-<p class="footer4">Copyright ©2021 All rights reserved | This template is made with<i class="fas fa-heart"></i>  by Colorlib</p>
 </div>
 </section>
 

@@ -8,7 +8,27 @@
     <link rel="stylesheet" href="master.css">
     <!--%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
     <style media="screen">
-        @media only screen and (max-width: 768px) {
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1000px) {
           .nav-menu {
               position: fixed;
               left: -100%;
@@ -22,20 +42,21 @@ opacity: .8;
               transition: 0.3s;
               box-shadow:
                   0 10px 27px rgba(0, 0, 0, 0.05);
+                  float: left;
           }
         
           .nav-menu.active {
               left: 0;
           }
         
-          .nav-item {
-              margin: 2.5rem 0;
+          .nav-item,.dropdown {
+              margin: .5rem 0;
           }
         
           .hamburger {
               display: block;
               cursor: pointer;
-              margin-left: -120px;
+              margin-left: -211px;
           }
           .hamburger.active .bar:nth-child(2) {
                   opacity: 0;
@@ -53,6 +74,9 @@ opacity: .8;
         @media only screen and (max-width: 350px){
             body{
                 font-size: xx-small;
+            }
+            .sec-menu{
+                height: 8500px;
             }
         }
         @media only screen and (max-width: 1000px){
@@ -96,6 +120,31 @@ z-index: -1;
     height: 1200px;
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         </style>
@@ -405,7 +454,6 @@ z-index: -1;
 
 </div>
 <!-------------------------------------------------->
-<p class="footer4">Copyright ©2021 All rights reserved | This template is made with<i class="fas fa-heart"></i>  by Colorlib</p>
 </div>
 
 </section>

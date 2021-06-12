@@ -105,14 +105,15 @@ li{
     display: flex;
 }
 
-.nav-item {
+.nav-item,.dropdown {
     margin-left:20px;
 }
 
-.nav-link{
+.nav-link,.dropdown a{
     font-size:20px;
     font-weight: 100;
     color: #f5f8fd;
+    margin-right: 100%;
 }
 
 .nav-link:hover,.dropbtn:hover{
@@ -539,7 +540,8 @@ font-family:monospace;
     background-position:center;
     opacity: 0.9}
 .sec-menu{
-    margin-top: 590px;}
+    margin-top: 590px;
+}
     .breakfast .p{
         background-color: rgb(15, 15, 49);
         width: 13%;
