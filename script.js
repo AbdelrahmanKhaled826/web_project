@@ -118,5 +118,10 @@ if(password != password2) {
     return false;  
   } 
 
+  if(password == password2) {  
+ 
+    alert("submition correct ! thanks");
+    return false;  
+  } 
 return check;
  }

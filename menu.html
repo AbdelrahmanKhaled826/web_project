@@ -13,21 +13,62 @@
 
 
 
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 50%;
+  
+}
+table caption{
+    font-size:80px;
+    font-family: cursive;
+}
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding:1px 3px;
+  text-align: center;
+}
+
+#customers tr:nth-child(even){background-color: #b2cbf1;}
+
+#customers tr:hover {background-color:#e6e668}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color:rgb(15 ,11 ,55);
+  color: white;
+}
+#td{
+    text-transform: capitalize;
+    background-color: rgb(15 ,11 ,55);
+    color: white;
+}
+@media screen and (max-width:1000px) {
+    #customers{
+width: 75%;
+    }
+    table{
+        width: 75%;
+        margin: 0;
+        padding: 0;
+        font-size: x-small;
+        margin-left: auto;
+        margin-right: auto;
+    }
+tr ,th{
+    margin: 0;
+    padding: 0;
+}
+}
 
 
 
 
 
-        
 
-
-
-
-
-
-
-
-
+/*  ==============================================================================*/
 @media only screen and (max-width: 1000px) {
           .nav-menu {
               position: fixed;
@@ -382,6 +423,52 @@ z-index: -1;
 </div>
 </section>
 </section>
+ 
+
+
+
+
+
+
+<body>
+
+    <table id="customers">
+        <caption>sales</caption>
+      <tr>
+        <th id="td"></th>
+        <th>breakfast</th>
+        <th>Lunch</th>
+        <th>dinner</th>
+      </tr>
+      <tr>
+        <td id="td">from</td>
+        <td>30$</td>
+        <td>66$</td>
+        <td>80$</td>
+      </tr>
+      <tr>
+        <td id="td">to</td>
+        <td>60$</td>
+        <td>90$</td>
+        <td>120$</td>
+      </tr>
+      <tr>
+        <td id="td">discount</td>
+        <td>20%</td>
+        <td>10%</td>
+        <td>24%</td>
+      </tr>
+      <tr>
+        <td id="td">offer</td>
+        <td>2 meal</td>
+        <td>4 meal</td>
+        <td>5 meal</td>
+      </tr>
+    
+    </table>
+ 
+
+
 <!----------------------------------------------------footer-------------------------------->
 <!--------------------------------------------------------------------------------------------------section-footer-------------------------------------->
 <section class="footer-section" style="position: absolute;margin-top: 1024px;">
